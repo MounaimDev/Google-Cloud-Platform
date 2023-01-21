@@ -1,0 +1,3 @@
+pip install boto3 # for AWS
+pip install azure-storage-blob # for Azure
+pip install google-cloud-storage # for GCP
