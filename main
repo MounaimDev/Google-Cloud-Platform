@@ -1,0 +1,12 @@
+from google.cloud import storage
+
+# create a client
+client = storage.Client()
+
+# Upload a file
+bucket = client.bucket("my-bucket")
+blob = bucket.blob("s3_file.txt")
+blob.upload_from_filename("local_file.txt")
+
+# Download a file
+blob.download_to_filename("downloaded_file.txt")
